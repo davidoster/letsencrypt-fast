@@ -11,12 +11,13 @@ Contains two (2) bash scripts:
 - le.sh that handles all the SSL certificate generation/renewing
 
 **The install.sh script is for an Ubuntu/Debian Linux flavour.**
+
 If you need to install zerossl for another flavour just navigate here: https://zerossl.com/installation.html
 
 **Steps to install**
-- 1. wget https://github.com/davidoster/letsencrypt-fast/blob/v1.0.0/install.sh
-- 2. sudo chmod 744 ./install.sh
-- 3. ./install.sh
+- 1. ```wget https://github.com/davidoster/letsencrypt-fast/blob/v1.0.0/install.sh```
+- 2. ```sudo chmod 744 ./install.sh```
+- 3. ```./install.sh```
 
 **_Usage_**
 
@@ -30,15 +31,15 @@ If you need to install zerossl for another flavour just navigate here: https://z
 
 _For testing_
 
-./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -t
+```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -t```
 
 _For real generation_
 
-./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -l
+```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -l```
 
 _For renewal_ **(does it 7 days before expiration automatically)**
 
-./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r
+```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r```
 
 This is a script to help people create their --!FREE!-- SSL certificate for their site(2) in a very fast and convenient way.
 It uses the approach from https://zerossl.com/ and installs various Perl packages in order to work.
