@@ -10,33 +10,33 @@ Contains two (2) bash scripts:
 - install.sh that will install and create the appropriate directories
 - le.sh that handles all the SSL certificate generation/renewing
 
-The install.sh script is for an Ubuntu/Debian Linux flavour.
+**The install.sh script is for an Ubuntu/Debian Linux flavour.**
 If you need to install zerossl for another flavour just navigate here: https://zerossl.com/installation.html
 
-Steps to install
+**Steps to install**
 - 1. wget https://github.com/davidoster/letsencrypt-fast/blob/v1.0.0/install.sh
 - 2. sudo chmod 744 ./install.sh
 - 3. ./install.sh
 
-Usage
+**Usage**
 
-Arguments
+**Arguments**
 
 - a. domain = just the name of the domain without the TLD (.xyz) part
 - b. www.domain.com,domain.com = the name of the domains you want to register. They need to be comma (,) separated
 - c. operation = valid operations are: -t for testing, -l for true generation, -r for auto renewal on 7 days before expiration
 
-Running
+**Running**
 
-- For testing
+**For testing**
 
 ./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -t
 
-- For real generation
+**For real generation**
 
 ./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -l
 
-- For renewal (does it 7 days before expiration automatically)
+**For renewal (does it 7 days before expiration automatically)**
 
 ./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r
 
@@ -44,4 +44,4 @@ This is a script to help people create their --!FREE!-- SSL certificate for thei
 It uses the approach from https://zerossl.com/ and installs various Perl packages in order to work.
 For questions or enhancements : info [at] eletter [dot] gr
 
-Courtesy of http://eLetter.gr for public unrestricted use!
+**Courtesy of http://eLetter.gr for public unrestricted use!**
