@@ -14,15 +14,19 @@ The install.sh script is for an Ubuntu/Debian Linux flavour.
 If you need to install zerossl for another flavour just navigate here: https://zerossl.com/installation.html
 
 Steps to install
-1. wget https://github.com/davidoster/letsencrypt-fast/blob/v1.0.0/install.sh
-2. sudo chmod 744 ./install.sh
-3. ./install.sh
+- 1. wget https://github.com/davidoster/letsencrypt-fast/blob/v1.0.0/install.sh
+- 2. sudo chmod 744 ./install.sh
+- 3. ./install.sh
 
 Usage
+
 Arguments
-a. domain = just the name of the domain without the TLD (.xyz) part
-b. www.domain.com,domain.com = the name of the domains you want to register. They need to be comma (,) separated
-c. operation = valid operations are: -t for testing, -l for true generation, -r for auto renewal on 7 days before expiration
+
+- a. domain = just the name of the domain without the TLD (.xyz) part
+- b. www.domain.com,domain.com = the name of the domains you want to register. They need to be comma (,) separated
+- c. operation = valid operations are: -t for testing, -l for true generation, -r for auto renewal on 7 days before expiration
+
+Running
 
 - For testing
 ./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -t
