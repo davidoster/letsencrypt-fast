@@ -18,7 +18,7 @@ If you need to install zerossl for another flavour just navigate here: https://z
 - 2. sudo chmod 744 ./install.sh
 - 3. ./install.sh
 
-**Usage**
+**_Usage_**
 
 **Arguments**
 
@@ -28,15 +28,15 @@ If you need to install zerossl for another flavour just navigate here: https://z
 
 **Running**
 
-**For testing**
+_For testing_
 
 ./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -t
 
-**For real generation**
+_For real generation_
 
 ./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -l
 
-**For renewal (does it 7 days before expiration automatically)**
+_For renewal_ **(does it 7 days before expiration automatically)**
 
 ./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r
 
