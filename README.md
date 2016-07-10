@@ -15,9 +15,9 @@ Contains two (2) bash scripts:
 If you need to install zerossl for another flavour just navigate here: https://zerossl.com/installation.html
 
 **Steps to install**
-- 1. ```wget https://github.com/davidoster/letsencrypt-fast/blob/v1.0.0/install.sh```
-- 2. ```sudo chmod 744 ./install.sh```
-- 3. ```./install.sh```
+- ```wget https://github.com/davidoster/letsencrypt-fast/blob/v1.0.0/install.sh```
+- ```sudo chmod 744 ./install.sh```
+- ```./install.sh```
 
 **_Usage_**
 
