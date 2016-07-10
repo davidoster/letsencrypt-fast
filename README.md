@@ -29,13 +29,16 @@ Arguments
 Running
 
 - For testing
+
 ./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -t
 
 - For real generation
-/le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -l
+
+./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -l
 
 - For renewal (does it 7 days before expiration automatically)
-/le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r
+
+./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r
 
 This is a script to help people create their --!FREE!-- SSL certificate for their site(2) in a very fast and convenient way.
 It uses the approach from https://zerossl.com/ and installs various Perl packages in order to work.
