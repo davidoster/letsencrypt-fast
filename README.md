@@ -2,6 +2,7 @@
 The fastest way to test/generate/renew Let's Encrypt SSL certificates!!! 
 Requires root access and a live webserver to run the script at.
 The script must run on the live web server.
+It supports multiple domains/sites on the same server to obtain a valid SSL certificate!!!
 IT DOES NOT stop the server from running in order to validate!
 
 These scripts are based on the excellent work of the people at https://zerossl.com/
@@ -25,7 +26,8 @@ If you need to install zerossl for another flavour just navigate here: https://z
 
 - a. domain = just the name of the domain without the TLD (.xyz) part
 - b. www.domain.com,domain.com = the name of the domains you want to register. They need to be comma (,) separated
-- c. operation = valid operations are: -t for testing, -l for true generation, -r for auto renewal on 7 days before expiration
+- c. path to web domain files = the full web path of your site, e.g. /var/html/www/
+- d. operation = valid operations are: -t for testing, -l for true generation, -r for auto renewal on 7 days before expiration
 
 **Running**
 
