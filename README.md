@@ -42,7 +42,9 @@ _For real generation_
 _For renewal_ **(does it 7 days before expiration automatically)**
 
 ```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r```
+
 Run the above command in host's cron, e.g.
+
 ```0       18 * * 1,3,5    root    /root/software/le.sh domain domain.com,www.domain.com /path/to/domain/ -r > /dev/null 2>&1```
 
 This is a script to help people create their **FREE** SSL certificate for their site(s) in a very fast and convenient way.
