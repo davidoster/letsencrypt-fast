@@ -24,10 +24,10 @@ If you need to install zerossl for another flavour just navigate here: https://z
 
 **Arguments**
 
-- a. domain = just the name of the domain without the TLD (.xyz) part
-- b. www.domain.com,domain.com = the name of the domains you want to register. They need to be comma (,) separated
-- c. path to web domain files = the full web path of your site, e.g. /var/html/www/
-- d. operation = valid operations are: -t for testing, -l for true generation, -r for auto renewal on 7 days before expiration
+- domain = just the name of the domain without the TLD (.xyz) part
+- www.domain.com,domain.com = the name of the domains you want to register. They need to be comma (,) separated
+- path to web domain files = the full web path of your site, e.g. /var/html/www/
+- operation = valid operations are: -t for testing, -l for true generation, -r for auto renewal on 7 days before expiration
 
 **Running**
 
@@ -42,8 +42,10 @@ _For real generation_
 _For renewal_ **(does it 7 days before expiration automatically)**
 
 ```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r```
+Run the above command in host's cron, e.g.
+```0       18 * * 1,3,5    root    /root/software/le.sh domain domain.com,www.domain.com /path/to/domain/ -r > /dev/null 2>&1```
 
-This is a script to help people create their --!FREE!-- SSL certificate for their site(2) in a very fast and convenient way.
+This is a script to help people create their **FREE** SSL certificate for their site(s) in a very fast and convenient way.
 It uses the approach from https://zerossl.com/ and installs various Perl packages in order to work.
 For questions or enhancements : info [at] eletter [dot] gr
 
