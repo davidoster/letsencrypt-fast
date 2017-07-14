@@ -1,9 +1,15 @@
 # letsencrypt-fast
 The fastest way to test/generate/renew Let's Encrypt SSL certificates!!! 
-Requires root access and a live webserver to run the script at.
-The script must run on the live web server.
-It supports multiple domains/sites on the same server to obtain a valid SSL certificate!!!
-IT DOES NOT stop the server from running in order to validate!
+
+**Requires root access** and a live webserver to run the script at.
+
+**The script must run on the live web server.**
+
+**It supports multiple domains/sites on the same server** to obtain a valid SSL certificate.
+
+**IT DOES NOT** stop the server from running in order to validate!
+
+If put on cron **it renews automatically 7 days before expiration**.
 
 These scripts are based on the excellent work of the people at https://zerossl.com/
 
