@@ -11,7 +11,9 @@ The fastest way to test/generate/renew Let's Encrypt SSL certificates!!!
 
 If put on cron **it renews automatically 7 days before expiration**.
 
+
 These scripts are based on the excellent work of the people at https://zerossl.com/
+
 
 Contains two (2) bash scripts:
 - install.sh that will install and create the appropriate directories
@@ -21,49 +23,56 @@ Contains two (2) bash scripts:
 
 If you need to install zerossl for another flavour just navigate here: https://zerossl.com/installation.html
 
+
 **Steps to install**
 - ```wget https://raw.githubusercontent.com/davidoster/letsencrypt-fast/v1.0.0/install.sh```
 - ```sudo chmod 744 ./install.sh```
 - ```./install.sh```
 
+
 **_Usage_**
 
-**Arguments**
+  **Arguments**
 
-- domain = just the name of the domain without the TLD (.xyz) part
-- www.domain.com,domain.com = the name of the domains you want to register. They need to be comma (,) separated
-- path to web domain files = the full web path of your site, e.g. /var/html/www/
-- operation = valid operations are: -t for testing, -l for true generation, -r for auto renewal on 7 days before expiration
+  - domain = just the name of the domain without the TLD (.xyz) part
+  - www.domain.com,domain.com = the name of the domains you want to register. They need to be comma (,) separated
+  - path to web domain files = the full web path of your site, e.g. /var/html/www/
+  - operation = valid operations are: -t for testing, -l for true generation, -r for auto renewal on 7 days before expiration
 
-**Running**
+  **Running**
 
-_For testing_
+  _For testing_
 
-```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -t```
+    ```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -t```
 
-_For real generation_
+  _For real generation_
 
-```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -l```
+    ```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -l```
 
-_For renewal_ **(does it 7 days before expiration automatically)**
+  _For renewal_ **(does it 7 days before expiration automatically)**
 
-```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r```
+    ```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r```
 
-Run the above command in host's cron, e.g.
+**_Auto Renewal_**
 
-```0       18 * * 1,3,5    root    /root/software/le.sh domain domain.com,www.domain.com /path/to/domain/ -r > /dev/null 2>&1```
+  Run the above command in host's cron, e.g.
 
-You can find the domain.crt and domain.key files under 
+    ```0       18 * * 1,3,5    root    /root/software/le.sh domain domain.com,www.domain.com /path/to/domain/ -r > /dev/null 2>&1```
 
-```/root/software/keys/domain.key``` and use these paths to your webserver,
 
-e.g. 
+**_Certificate Files_**
 
-```/root/software/keys/domain.key/domain.crt```
+  You can find the domain.crt and domain.key files under 
 
-```/root/software/keys/domain.key/domain.key```
+    ```/root/software/keys/domain.key``` and use these paths to your webserver,
 
-Also inside this directory you can find the **domain.csr** file along with the file **account.key** for the domain in let's encrypt systems.
+  e.g. 
+
+    ```/root/software/keys/domain.key/domain.crt```
+
+    ```/root/software/keys/domain.key/domain.key```
+
+  Also inside this directory you can find the **domain.csr** file along with the file **account.key** for the domain in let's encrypt systems.
 
 This is a script to help people create their **FREE** SSL certificate for their site(s) in a very fast and convenient way.
 It uses the approach from https://zerossl.com/ and installs various Perl packages in order to work.
