@@ -1,3 +1,5 @@
+![Let's Encrypt Fast Lock](https://github.com/davidoster/letsencrypt-fast/blob/master/letsencrypt_fast_lock.jpg?raw=true)
+
 # letsencrypt-fast
 The fastest way to test/generate/renew Let's Encrypt SSL certificates!!! 
 
@@ -73,5 +75,7 @@ If you need to install zerossl for another flavour just navigate here: https://z
 This is a script to help people create their **FREE** SSL certificate for their site(s) in a very fast and convenient way.
 It uses the approach from https://zerossl.com/ and installs various Perl packages in order to work.
 For questions or enhancements : info [at] eletter [dot] gr
+
+**Arrow by Freepik - http://www.freepik.com/free-vector/colorful-indian-arrows_805475.htm
 
 **Courtesy of http://eLetter.gr for public unrestricted use!**
