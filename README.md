@@ -37,15 +37,15 @@ If you need to install zerossl for another flavour just navigate here: https://z
 
   **Running**
 
-  _For testing_
+  **_For testing_**
 
   ```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -t```
 
-  _For real generation_
+  **_For real generation_**
 
   ```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -l```
 
-  _For renewal_ **(does it 7 days before expiration automatically)**
+  **_For renewal_** **(does it 7 days before expiration automatically)**
 
   ```./le.sh domain www.domain.com,domain.com /path/to/webdomain/files/ -r```
 
