@@ -47,6 +47,12 @@ Run the above command in host's cron, e.g.
 
 ```0       18 * * 1,3,5    root    /root/software/le.sh domain domain.com,www.domain.com /path/to/domain/ -r > /dev/null 2>&1```
 
+You can find the domain.crt and domain.key files under /root/software/keys/domain.key and use these paths to your webserver,
+e.g. 
+```/root/software/keys/domain.key/domain.crt```
+```/root/software/keys/domain.key/domain.key```
+Also inside this directory you can find the domain.csr file along with the file account.key for the domain in let's encrypt systems.
+
 This is a script to help people create their **FREE** SSL certificate for their site(s) in a very fast and convenient way.
 It uses the approach from https://zerossl.com/ and installs various Perl packages in order to work.
 For questions or enhancements : info [at] eletter [dot] gr
