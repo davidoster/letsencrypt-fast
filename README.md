@@ -78,4 +78,4 @@ For questions or enhancements : info [at] eletter [dot] gr
 
 **Arrow by Freepik - http://www.freepik.com/free-vector/colorful-indian-arrows_805475.htm
 
-**Courtesy of http://eLetter.gr for public unrestricted use!**
+**Courtesy of https://eLetter.gr for public unrestricted use!**
