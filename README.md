@@ -74,7 +74,7 @@ If you need to install zerossl for another flavour just navigate here: https://z
 
 This is a script to help people create their **FREE** SSL certificate for their site(s) in a very fast and convenient way.
 It uses the approach from https://zerossl.com/ and installs various Perl packages in order to work.
-For questions or enhancements : info [at] eletter [dot] gr
+For questions or enhancements : support [at] eletter [dot] gr
 
 **Arrow by Freepik - http://www.freepik.com/free-vector/colorful-indian-arrows_805475.htm
 
